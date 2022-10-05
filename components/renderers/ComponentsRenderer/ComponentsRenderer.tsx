@@ -1,6 +1,6 @@
-import { FieldsType } from "../../../../pages/types";
+import { FieldsType } from "../../../pages/types";
 
-import HeaderMapper from "../../components/HeaderMapper/HeaderMapper";
+import HeaderMapper from "../../HeaderMapper/HeaderMapper";
 
 type ComponentsRendererProps = {
   fields: FieldsType;

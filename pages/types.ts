@@ -4,8 +4,29 @@ export type FieldsType = {
   title: string;
 };
 
-export interface Page {
+export type Fields = {
+  title: string;
+  imageUrl: string;
+};
+
+export type PageLayoutChildTypes = {
   id: string;
   type: string;
-  fields: FieldsType;
-}
+  fields: Fields;
+};
+
+export type RenderZonesTypes = {
+  id: string;
+  components: PageLayoutChildTypes[];
+};
+
+export type PageLayoutTypes = {
+  header: PageLayoutChildTypes;
+  renderZones: RenderZonesTypes[];
+  footer: PageLayoutChildTypes;
+};
+
+export type Site = {
+  title: string;
+  id: string;
+};
